@@ -1,13 +1,16 @@
 // calulator project
+import 'dart:math';
+
 main() {
   var zarb = multiplication(2, 2); // 4
   var jam = sum(2, 8); // 10
   var menha = subtraction(20, 20); // 0
   var tagsim = divide(100, 2); // 50
   var tavan = pow(10, 2); //8
+  var Root = root(8);
 
   print(
-      "zarb:${zarb} jam:${jam} menha:${menha} tagsim:${tagsim} tavan:${tavan}");
+      "zarb:${zarb} jam:${jam} menha:${menha} tagsim:${tagsim} tavan:${tavan} Root:${Root}");
 }
 
 // multiplication
@@ -52,5 +55,11 @@ pow(int num1, int num2) {
   }
   result = num1;
 
+  return result;
+}
+
+//root
+root(int num1) {
+  var result = sqrt(num1);
   return result;
 }
