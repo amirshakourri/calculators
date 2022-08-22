@@ -7,10 +7,10 @@ main() {
   var menha = subtraction(20, 20); // 0
   var tagsim = divide(100, 2); // 50
   var tavan = pow(10, 2); //8
-  var Root = root(8);
+  var rroot = root(8);
 
   print(
-      "zarb:${zarb} jam:${jam} menha:${menha} tagsim:${tagsim} tavan:${tavan} Root:${Root}");
+      "zarb:${zarb} jam:${jam} menha:${menha} tagsim:${tagsim} tavan:${tavan} Root:${rroot}");
 }
 
 // multiplication
@@ -39,22 +39,18 @@ subtraction(int num1, int num2) {
 divide(int num1, int num2) {
   while (num1 < num2) {
     print("Opss try to give higher number!");
-  }
-  ;
-
+  };
   var result = num1 / num2;
   return result;
 }
 
 //pow
 pow(int num1, int num2) {
-  var result;
   var new_num1 = num1;
   for (int i = 1; i < num2; i++) {
     num1 = num1 * new_num1;
   }
-  result = num1;
-
+  var result = num1;
   return result;
 }
 
